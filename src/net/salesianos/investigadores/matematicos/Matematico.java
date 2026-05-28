@@ -13,15 +13,31 @@ public class Matematico extends Investigadores {
     @Override
     public void EstadoSueldo(){
         if (getSueldo() < 1800) {
-            System.out.println("Jefe quiero un aumento para el lego batman");
+           System.out.println("Jefe quiero un aumento para el lego batman");
         } else{
             System.out.println("Agusto con la paga boss");
         }
     }
 
     @Override
-    public void Trabajar(){
-        
+    public void Trabajar() {
+        System.out.println("El matemático está listo para operar.");
     }
 
+    public void Trabajar(int numero) {
+        for (int matriz1 = 0; matriz1 < 3; matriz1++) {
+            for (int matriz2 = 0; matriz2 < 3; matriz2++) {
+                this.matriz[matriz1][matriz2] = this.matriz[matriz1][matriz2] * numero;
+            }
+        }
+        System.out.println("¡Matriz multiplicada por " + numero + " con éxito!");
+    }
+
+    public void Trabajar(int[][] otraMatriz) {
+        for (int matriz1 = 0; matriz1 < 3; matriz1++) {
+            for (int matriz2 = 0; matriz2 < 3; matriz2++) {
+                this.matriz[matriz1][matriz2] = this.matriz[matriz1][matriz2] + otraMatriz[matriz1][matriz2];
+            }
+        }
+    }
 }
