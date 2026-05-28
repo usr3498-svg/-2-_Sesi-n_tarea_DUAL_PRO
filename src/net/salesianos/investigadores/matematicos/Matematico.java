@@ -21,7 +21,7 @@ public class Matematico extends Investigadores {
 
     @Override
     public void Trabajar() {
-        System.out.println("El matemático está listo para operar.");
+        System.out.println("Matemático esta perfe.");
     }
 
     public void Trabajar(int numero) {
@@ -30,7 +30,7 @@ public class Matematico extends Investigadores {
                 this.matriz[matriz1][matriz2] = this.matriz[matriz1][matriz2] * numero;
             }
         }
-        System.out.println("¡Matriz multiplicada por " + numero + " con éxito!");
+        System.out.println("La matriz multiplicada por " + numero );
     }
 
     public void Trabajar(int[][] otraMatriz) {
