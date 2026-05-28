@@ -54,5 +54,8 @@ public abstract class Investigadores {
     public void EstadoSueldo() {
         
     }
+    public void Trabajar() {
+        
+    }
 
 }
